@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @post.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @post.description %>
+</p>
+
+<h2>Please leave a comment:</h2>
+
+<%= form_for([@post, Comment.new],:remote => true) do |f| %>
+  <div class="field">
+    <%= f.text_area :comment, :cols => 40, :rows => 2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<h2>What others felt about this:</h2>
+<div id="comments">
+  <% @post.comments.reverse.each do |comment| %>
+    <div class="comment">
+      <p><%= comment.comment %></p>
+    </div>
+  <% end %>
+</div>
