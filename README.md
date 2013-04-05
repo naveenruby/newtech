@@ -1,4 +1,0 @@
-newtech
-=======
-
-newtech
