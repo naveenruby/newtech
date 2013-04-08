@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 
 gem 'rails', '3.2.11'
 
@@ -30,6 +32,12 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 
 gem "capistrano", :group => :development
+
+gem "heroku"
+
+group :production do
+  gem 'thin'
+end
 
 
 
