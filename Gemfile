@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-	require 'rubygems'
-    require 'mongo'
 
 gem 'rails', '3.2.11'
 
