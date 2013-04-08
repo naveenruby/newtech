@@ -1,0 +1,1759 @@
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0.5ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:09:21 +0530
+
+ActionController::RoutingError (uninitialized constant Post::MongoMapper):
+  app/models/post.rb:2:in `<class:Post>'
+  app/models/post.rb:1:in `<top (required)>'
+  app/controllers/posts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:11:11 +0530
+
+ActionController::RoutingError (undefined method `key' for Post:Class):
+  app/models/post.rb:6:in `<class:Post>'
+  app/models/post.rb:1:in `<top (required)>'
+  app/controllers/posts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:16:26 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6404ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (50.8578ms)
+  Rendered posts/index.html.erb within layouts/application (53.1ms)
+Completed 500 Internal Server Error in 99ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__617060328'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:17:29 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7749ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2899ms)
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__617060328'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:17:39 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2358ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__617060328'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:18:18 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7997ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3002ms)
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:07 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5319ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.1888ms)
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:08 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3338ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:08 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3331ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:08 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3290ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:08 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3469ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:08 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3531ms)
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:09 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3276ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:09 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3302ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:19:09 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2878ms)
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___734230990__619970098'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (19.5ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:21:05 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6161ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3803ms)
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__263695668_78239700'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:22:50 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6075ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2751ms)
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /home/ntf/aaa/newtech/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Newtech</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__254741348_90268000'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:27:05 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6225ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (15.8098ms)
+  Rendered posts/index.html.erb within layouts/application (20.0ms)
+Compiled application.js  (2ms)  (pid 26041)
+Completed 200 OK in 106ms (Views: 105.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:06 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:06 +0530
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:06 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:06 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:06 +0530
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:06 +0530
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-04-03 18:27:10 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (9.7ms)
+  Rendered posts/new.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 33ms (Views: 32.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:10 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:11 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:11 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:11 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:11 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:11 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-04-03 18:27:15 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "post"=>{"name"=>"ntf", "description"=>"ntf"}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6328ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=newtech_development collection=posts documents=[{"_id"=>"515c272b9b4e7ae410000001", "name"=>"ntf", "description"=>"ntf", "updated_at"=>2013-04-03 12:57:15 UTC, "created_at"=>2013-04-03 12:57:15 UTC}] flags=[] (0.1109ms)
+Redirected to http://0.0.0.0:3000/posts/515c272b9b4e7ae410000001
+Completed 302 Found in 15ms
+
+
+Started GET "/posts/515c272b9b4e7ae410000001" for 127.0.0.1 at 2013-04-03 18:27:16 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"515c272b9b4e7ae410000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c272b9b4e7ae410000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (222.4813ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=comments selector={"post_id"=>"515c272b9b4e7ae410000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.0219ms)
+  Rendered posts/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 238ms (Views: 13.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:16 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:16 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:27:16 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:16 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:16 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:27:16 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/posts/515c272b9b4e7ae410000001/comments" for 127.0.0.1 at 2013-04-03 18:27:20 +0530
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "comment"=>{"comment"=>"aaaaa"}, "commit"=>"Create Comment", "post_id"=>"515c272b9b4e7ae410000001"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6521ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c272b9b4e7ae410000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3412ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=newtech_development collection=comments documents=[{"_id"=>"515c27309b4e7af921000002", "comment"=>"aaaaa", "post_id"=>"515c272b9b4e7ae410000001", "updated_at"=>2013-04-03 12:57:20 UTC, "created_at"=>2013-04-03 12:57:20 UTC}] flags=[] (0.1588ms)
+  Rendered comments/create.js.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 18:49:02 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6380ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2501ms)
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 50ms (Views: 49.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:49:03 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:49:03 +0530
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:49:03 +0530
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:49:03 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:49:03 +0530
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:49:03 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-04-03 18:49:05 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (9.8ms)
+  Rendered posts/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 19ms (Views: 18.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:49:05 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:49:05 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:49:05 +0530
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:49:05 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:49:05 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:49:05 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-04-03 18:52:44 +0530
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 17ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-03 18:52:44 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 10ms (Views: 9.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:52:44 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:52:44 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:52:44 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:52:44 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:52:44 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:52:44 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-04-03 18:53:10 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "user"=>{"email"=>"naveen@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6266ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"email"=>"naveen@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (25.1410ms)
+Completed 401 Unauthorized in 31ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "user"=>{"email"=>"naveen@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 91ms (Views: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:53:10 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:53:10 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:53:10 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:53:10 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:53:10 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:53:10 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-03 18:53:29 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `name' for #<User:0xb6129f88>):
+    4:   <%= devise_error_messages! %>
+    5: 
+    6:   <div><%= f.label :name %><br />
+    7:   <%= f.text_field :name %></div>
+    8: 
+    9:   <div><%= f.label :email %><br />
+    10:   <%= f.email_field :email, :autofocus => true %></div>
+  app/views/devise/registrations/new.html.erb:7:in `block in _app_views_devise_registrations_new_html_erb__30035124__620497928'
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__30035124__620497928'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-03 18:54:41 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 23ms (Views: 8.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:54:41 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:54:41 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:54:41 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:54:41 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:54:41 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:54:41 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-04-03 18:55:03 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "user"=>{"email"=>"ntf@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5753ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"email"=>"ntf@gmail.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (15.2717ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=newtech_development collection=users documents=[{"_id"=>"515c2daf9b4e7a43c6000002", "email"=>"ntf@gmail.com", "encrypted_password"=>"$2a$10$oP4CZlIlvHfigIqJLsnRcuOLyBBlvwSFmZxfMeJBIpwmt2rOJvNSG", "sign_in_count"=>0}] flags=[] (0.2072ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=newtech_development collection=users selector={"_id"=>"515c2daf9b4e7a43c6000002"} update={"$set"=>{"last_sign_in_at"=>2013-04-03 13:25:03 UTC, "current_sign_in_at"=>2013-04-03 13:25:03 UTC, "last_sign_in_ip"=>"127.0.0.1", "current_sign_in_ip"=>"127.0.0.1", "sign_in_count"=>1}} flags=[] (0.1967ms)
+Redirected to http://0.0.0.0:3000/posts/new
+Completed 302 Found in 109ms
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-04-03 18:55:03 +0530
+Processing by PostsController#new as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3657ms)
+  Rendered posts/_form.html.erb (2.4ms)
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 7.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:55:04 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:55:04 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:55:04 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:55:04 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:55:04 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:55:04 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-04-03 18:55:45 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "post"=>{"name"=>"pic", "description"=>"do task"}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7520ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2699ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=newtech_development collection=posts documents=[{"_id"=>"515c2dd99b4e7a5302000003", "name"=>"pic", "description"=>"do task", "updated_at"=>2013-04-03 13:25:45 UTC, "created_at"=>2013-04-03 13:25:45 UTC}] flags=[] (0.1361ms)
+Redirected to http://0.0.0.0:3000/posts/515c2dd99b4e7a5302000003
+Completed 302 Found in 17ms
+
+
+Started GET "/posts/515c2dd99b4e7a5302000003" for 127.0.0.1 at 2013-04-03 18:55:45 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"515c2dd99b4e7a5302000003"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4981ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2959ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=comments selector={"post_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (9.5689ms)
+  Rendered posts/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 22ms (Views: 19.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 18:55:45 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 18:55:45 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 18:55:45 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 18:55:45 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 18:55:45 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 18:55:45 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started POST "/posts/515c2dd99b4e7a5302000003/comments" for 127.0.0.1 at 2013-04-03 18:55:51 +0530
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "comment"=>{"comment"=>"good"}, "commit"=>"Create Comment", "post_id"=>"515c2dd99b4e7a5302000003"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6728ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4425ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3185ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=newtech_development collection=comments documents=[{"_id"=>"515c2ddf9b4e7a2a6d000004", "comment"=>"good", "post_id"=>"515c2dd99b4e7a5302000003", "updated_at"=>2013-04-03 13:25:51 UTC, "created_at"=>2013-04-03 13:25:51 UTC}] flags=[] (0.2320ms)
+  Rendered comments/create.js.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 2.6ms)
+
+
+Started GET "/posts/515c2dd99b4e7a5302000003" for 127.0.0.1 at 2013-04-03 19:37:04 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"515c2dd99b4e7a5302000003"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5620ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3662ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3715ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=comments selector={"post_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (11.2181ms)
+  Rendered posts/show.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 44ms (Views: 37.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:04 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:04 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:04 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:04 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:04 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:04 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2013-04-03 19:37:12 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5355ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2530ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2909ms)
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 7.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:12 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:12 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:12 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:12 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:12 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:12 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-04-03 19:37:13 +0530
+Processing by PostsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5748ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3202ms)
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:14 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:14 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:14 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:14 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:14 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:14 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-04-03 19:37:17 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "post"=>{"name"=>"", "description"=>"ntf"}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5157ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2470ms)
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 11ms (Views: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:18 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:18 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 19:37:18 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:18 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:18 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 19:37:18 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-04-03 20:08:44 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "post"=>{"name"=>"", "description"=>"ntf"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 47ms
+
+LoadError (cannot load such file -- omniauth):
+  app/models/user.rb:6:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-04-03 20:09:27 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "post"=>{"name"=>"", "description"=>"ntf"}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0958ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4532ms)
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 7.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:27 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:27 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:27 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:27 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:27 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:27 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 20:09:33 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6318ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4644ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5155ms)
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 8.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:33 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:33 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:33 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:33 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:33 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:33 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-04-03 20:09:55 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6104ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3011ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3090ms)
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:55 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:55 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:56 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:56 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:09:56 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:09:56 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-03 20:11:46 +0530
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/ntf/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/ntf/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/ntf/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/ntf/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 20:12:26 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8318ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4244ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5407ms)
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 9.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:12:27 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:12:27 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:12:27 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:12:27 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:12:27 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:12:27 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 20:12:59 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7317ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3819ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4086ms)
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:00 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:00 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:00 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:00 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:00 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:00 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-04-03 20:13:02 +0530
+Processing by PostsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7486ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4504ms)
+  Rendered posts/_form.html.erb (3.1ms)
+  Rendered posts/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 15ms (Views: 11.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:02 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:03 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:03 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:03 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:03 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:03 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-04-03 20:13:04 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3HoolsusIrP3otDH+SWpd+f5BiLzVX6cnieekxJyEQ=", "post"=>{"name"=>"", "description"=>""}, "commit"=>"Create Post"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7775ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3736ms)
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 7.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:04 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:04 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:04 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:04 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:04 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:04 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-04-03 20:13:06 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5214ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3123ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3405ms)
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:06 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:06 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:06 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:06 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:06 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:06 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/posts/515c272b9b4e7ae410000001" for 127.0.0.1 at 2013-04-03 20:13:08 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"515c272b9b4e7ae410000001"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6630ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3598ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c272b9b4e7ae410000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4220ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=comments selector={"post_id"=>"515c272b9b4e7ae410000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4179ms)
+  Rendered posts/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 14ms (Views: 9.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:08 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:08 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:08 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:08 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:08 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:08 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/posts/515c2dd99b4e7a5302000003/edit" for 127.0.0.1 at 2013-04-03 20:13:16 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"515c2dd99b4e7a5302000003"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5410ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2906ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3214ms)
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:16 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:16 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:16 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:16 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:16 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:16 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-04-03 20:13:19 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6249ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4163ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4618ms)
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 14ms (Views: 11.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:19 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:19 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 20:13:19 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:19 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:19 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 20:13:19 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 21:06:21 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 9ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-03 21:06:21 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 183ms (Views: 182.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:22 +0530
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:22 +0530
+Served asset /posts.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:22 +0530
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:22 +0530
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:22 +0530
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:22 +0530
+Served asset /application.js - 200 OK (3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-04-03 21:06:35 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c9m0M74NxCilRc0yeStHjNRWh/tgzt2//5nZ9kPumPs=", "user"=>{"email"=>"naveen@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8836ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"email"=>"naveen@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (22.5599ms)
+Completed 401 Unauthorized in 37ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c9m0M74NxCilRc0yeStHjNRWh/tgzt2//5nZ9kPumPs=", "user"=>{"email"=>"naveen@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 95ms (Views: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:35 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:35 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:35 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:35 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:35 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:35 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-04-03 21:06:50 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c9m0M74NxCilRc0yeStHjNRWh/tgzt2//5nZ9kPumPs=", "user"=>{"email"=>"ntf@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9651ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"email"=>"ntf@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3371ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=newtech_development collection=users selector={"_id"=>"515c2daf9b4e7a43c6000002"} update={"$set"=>{"current_sign_in_at"=>2013-04-03 15:36:50 UTC, "sign_in_count"=>2}} flags=[] (0.2184ms)
+Redirected to http://0.0.0.0:3002/
+Completed 302 Found in 150ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 21:06:50 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4981ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (10.4845ms)
+  Rendered posts/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 33ms (Views: 31.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:50 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:50 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-03 21:06:50 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:50 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:50 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 21:06:50 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 192.168.1.14 at 2013-04-03 21:08:31 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 192.168.1.14 at 2013-04-03 21:08:31 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 9.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:32 +0530
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:32 +0530
+Served asset /posts.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:32 +0530
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:32 +0530
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:32 +0530
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:32 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.14 at 2013-04-03 21:08:51 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R8fwVEWJbJSURAn45oLJL4AAr9DI6QKlMDPa95GoCHc=", "user"=>{"email"=>"ntf@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9003ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"email"=>"ntf@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5023ms)
+Completed 401 Unauthorized in 85ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R8fwVEWJbJSURAn45oLJL4AAr9DI6QKlMDPa95GoCHc=", "user"=>{"email"=>"ntf@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 90ms (Views: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:52 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:52 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:52 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:52 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:52 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:52 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.14 at 2013-04-03 21:08:57 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R8fwVEWJbJSURAn45oLJL4AAr9DI6QKlMDPa95GoCHc=", "user"=>{"email"=>"ntf@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6378ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"email"=>"ntf@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5753ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=newtech_development collection=users selector={"_id"=>"515c2daf9b4e7a43c6000002"} update={"$set"=>{"last_sign_in_at"=>2013-04-03 15:36:50 UTC, "current_sign_in_at"=>2013-04-03 15:38:57 UTC, "current_sign_in_ip"=>"192.168.1.14", "sign_in_count"=>3}} flags=[] (0.1104ms)
+Redirected to http://192.168.1.4:3002/
+Completed 302 Found in 95ms
+
+
+Started GET "/" for 192.168.1.14 at 2013-04-03 21:08:58 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5205ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4241ms)
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 8.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:58 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:58 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.14 at 2013-04-03 21:08:58 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:58 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:58 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.14 at 2013-04-03 21:08:58 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/515c2dd99b4e7a5302000003" for 192.168.1.14 at 2013-04-03 21:09:02 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"515c2dd99b4e7a5302000003"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5808ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3624ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3028ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=comments selector={"post_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (9.3198ms)
+  Rendered posts/show.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 45ms (Views: 41.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:02 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:02 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:02 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:02 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:02 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:02 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/posts/515c2dd99b4e7a5302000003/comments" for 192.168.1.14 at 2013-04-03 21:09:09 +0530
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R8fwVEWJbJSURAn45oLJL4AAr9DI6QKlMDPa95GoCHc=", "comment"=>{"comment"=>"testtt"}, "commit"=>"Create Comment", "post_id"=>"515c2dd99b4e7a5302000003"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6576ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4284ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4215ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=newtech_development collection=comments documents=[{"_id"=>"515c4d1d9b4e7a2792000001", "comment"=>"testtt", "post_id"=>"515c2dd99b4e7a5302000003", "updated_at"=>2013-04-03 15:39:09 UTC, "created_at"=>2013-04-03 15:39:09 UTC}] flags=[] (0.1607ms)
+  Rendered comments/create.js.erb (0.6ms)
+Completed 200 OK in 23ms (Views: 15.2ms)
+
+
+Started POST "/posts/515c2dd99b4e7a5302000003/comments" for 192.168.1.14 at 2013-04-03 21:09:14 +0530
+Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R8fwVEWJbJSURAn45oLJL4AAr9DI6QKlMDPa95GoCHc=", "comment"=>{"comment"=>"testt"}, "commit"=>"Create Comment", "post_id"=>"515c2dd99b4e7a5302000003"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5145ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c2dd99b4e7a5302000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2954ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=newtech_development collection=comments documents=[{"_id"=>"515c4d229b4e7a2792000002", "comment"=>"testt", "post_id"=>"515c2dd99b4e7a5302000003", "updated_at"=>2013-04-03 15:39:14 UTC, "created_at"=>2013-04-03 15:39:14 UTC}] flags=[] (0.1330ms)
+  Rendered comments/create.js.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 2.9ms)
+
+
+Started GET "/posts/515c272b9b4e7ae410000001/edit" for 192.168.1.14 at 2013-04-03 21:09:19 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"515c272b9b4e7ae410000001"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5116ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={"_id"=>"515c272b9b4e7ae410000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4013ms)
+  Rendered posts/_form.html.erb (4.5ms)
+  Rendered posts/edit.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 17ms (Views: 14.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:19 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:19 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:19 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:19 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:19 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:19 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 192.168.1.14 at 2013-04-03 21:09:21 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7937ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4601ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4532ms)
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 12ms (Views: 8.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:22 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:22 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:22 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:22 +0530
+Served asset /jquery.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:22 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:22 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/posts/new" for 192.168.1.14 at 2013-04-03 21:09:23 +0530
+Processing by PostsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7815ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4625ms)
+  Rendered posts/_form.html.erb (3.0ms)
+  Rendered posts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 15ms (Views: 11.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:23 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:24 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:24 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:24 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:24 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:24 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/posts" for 192.168.1.14 at 2013-04-03 21:09:25 +0530
+Processing by PostsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5500ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=users selector={"$query"=>{"_id"=>"515c2daf9b4e7a43c6000002"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3173ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=newtech_development collection=posts selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3276ms)
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 6.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:26 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:26 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.14 at 2013-04-03 21:09:26 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:26 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:26 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.14 at 2013-04-03 21:09:26 +0530
+Served asset /application.js - 304 Not Modified (2ms)
